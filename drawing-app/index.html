@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drawing Canvas</h1>
+        <h5>by dhanushree s.p</h5>
+    </header>
+    <main>
+        <div class="toolbar">
+            <label for="colorPicker">Choose Color: </label>
+            <input type="color" id="colorPicker" value="#000000">
+            <button id="clearButton">Clear</button>
+            <button id="saveButton">Save</button>
+            <button id="eraserButton">Eraser</button>
+            <button id="undoButton">Undo</button>
+            <label for="brushSize">Brush Size: </label>
+            <select id="brushSize">
+                <option value="2">Small</option>
+                <option value="5" selected>Medium</option>
+                <option value="10">Large</option>
+            </select>
+        </div>
+        <canvas id="drawingCanvas" width="1300" height="500"></canvas>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
